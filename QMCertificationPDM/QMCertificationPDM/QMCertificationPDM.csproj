@@ -94,10 +94,97 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\CodeManagement.aspx" />
+    <Content Include="admin\CourseManagement.aspx" />
+    <Content Include="admin\Coursesbycollege.aspx" />
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\Report.aspx" />
+    <Content Include="admin\Reports\Report.aspx" />
+    <Content Include="admin\Reports\ReviewerWorkLoad.aspx" />
+    <Content Include="admin\Reports\TotalReviewes.aspx" />
+    <Content Include="admin\Trainings.aspx" />
+    <Content Include="admin\UserManagement.aspx" />
+    <Content Include="admin\Usersbycollege.aspx" />
+    <Content Include="admin\UsersbyTrainingType.aspx" />
+    <Content Include="App_Data\cdmstestdb.mdf" />
+    <Content Include="App_Data\cdmstestdb_log.ldf">
+      <DependentUpon>cdmstestdb.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\animated.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\datepicker.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\calendar.png" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\loadingBar.gif" />
+    <Content Include="img\NetID.jpg" />
+    <Content Include="img\paperworkandpayment.png" />
+    <Content Include="img\training.png" />
+    <Content Include="img\view.png" />
+    <Content Include="img\x.gif" />
+    <Content Include="img\y.gif" />
+    <Content Include="index.aspx" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-2.2.1.min.js" />
+    <Content Include="js\jquery.blockUI.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\scrolling-nav.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="bin\AjaxControlToolkit.dll.refresh" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="font\fontawesome-webfont.eot" />
+    <Content Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+    <Content Include="font\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="less\datepicker.less" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="admin\Reports\CourseDevelopmentDataset.xsc">
+      <DependentUpon>CourseDevelopmentDataset.xsd</DependentUpon>
+    </Content>
+    <None Include="admin\Reports\CourseDevelopmentDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CourseDevelopmentDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="admin\Reports\CourseDevelopmentDataset.xss">
+      <DependentUpon>CourseDevelopmentDataset.xsd</DependentUpon>
+    </Content>
+    <Content Include="admin\Reports\DevelopmentStatusGraph.rdlc" />
+    <Content Include="admin\Reports\Graph.rdlc" />
+    <Content Include="admin\Reports\PAYMENT.rdlc" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,7 +198,74 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\CodeManagement.aspx.cs">
+      <DependentUpon>CodeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\CourseManagement.aspx.cs">
+      <DependentUpon>CourseManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Coursesbycollege.aspx.cs">
+      <DependentUpon>Coursesbycollege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\CourseDevelopmentDataset.Designer.cs" />
+    <Compile Include="admin\Reports\CourseDevelopmentDataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CourseDevelopmentDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ReviewerWorkLoad.aspx.cs">
+      <DependentUpon>ReviewerWorkLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TotalReviewes.aspx.cs">
+      <DependentUpon>TotalReviewes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Trainings.aspx.cs">
+      <DependentUpon>Trainings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Usersbycollege.aspx.cs">
+      <DependentUpon>Usersbycollege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UsersbyTrainingType.aspx.cs">
+      <DependentUpon>UsersbyTrainingType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
